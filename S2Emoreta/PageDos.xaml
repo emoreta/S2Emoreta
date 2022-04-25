@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="S2Emoreta.PageDos">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                
+                <Label x:Name="lblUsuario" HorizontalTextAlignment="End" TextColor="White"></Label>
+            </Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                <Label Text="Nota 1" Grid.Row="0" Grid.Column="0"/>
+                <Entry  x:Name="txtNotaSeguimientoUno" Placeholder="Nota seguimiento 1" Keyboard="Numeric" MaxLength="2" Grid.Row="0"  Grid.Column="1"></Entry>
+                <Label Text="Nota Examen 1" Grid.Row="1" Grid.Column="0"/>
+                <Entry  x:Name="txtNotaExamenUno" Placeholder="Nota Examen 1" Keyboard="Numeric" MaxLength="2" Grid.Row="1"  Grid.Column="1"></Entry>
+
+                <Label Text="Nota Parcial 1" Grid.Row="2" Grid.Column="0"/>
+                <Label x:Name="lblNotaUNo" Grid.Row="2" Grid.Column="1"/>
+                <Button x:Name="btnNotaUNo" Text="Ingresar Nota 1" Clicked="btnNotaUNo_Clicked" Grid.Row="3" Grid.Column="1"/>
+            </Grid>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="Nota 2" Grid.Row="0" Grid.Column="0"/>
+                <Entry  x:Name="txtNotaSeguimientoDos" Placeholder="Nota seguimiento 2" Keyboard="Numeric" MaxLength="2" Grid.Row="0"  Grid.Column="1"></Entry>
+                <Label Text="Nota Examen 2" Grid.Row="1" Grid.Column="0"/>
+                <Entry  x:Name="txtNotaExamenDos" Placeholder="Nota Examen 2" Keyboard="Numeric" MaxLength="2" Grid.Row="1"  Grid.Column="1"></Entry>
+                <Label Text="Nota Parcial 2" Grid.Row="2" Grid.Column="0"/>
+                <Label x:Name="LblNotaDos" Grid.Row="2" Grid.Column="1"/>
+                <Button x:Name="btnNotaDos" Text="Ingresar Nota 2" Clicked="btnNotaDos_Clicked" Grid.Row="3" Grid.Column="1"/>
+            </Grid>
+
+            <Label Text="Nota Final" />
+            <Label x:Name="LblNotaFinal"  />
+            <Label Text="Estado" />
+            <Label x:Name="LblEstado" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
